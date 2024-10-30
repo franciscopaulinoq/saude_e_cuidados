@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block content %}
+<div>
+    <h1>Bem-vindo ao site de Saúde e Cuidados!</h1>
+    <p>Saúde e cuidados pessoais são essenciais para uma vida equilibrada e saudável. Uma ferramenta valiosa nesse
+        processo de autocuidado é o Índice de Massa Corporal (IMC), que você pode calcular facilmente clicando no botão
+        abaixo.</p>
+    <a href="{% url 'app:imc' %}" class="button">Calculadora de IMC</a>
+</div>
+{% endblock %}
